@@ -1,0 +1,47 @@
+body {
+    background: black;
+    color: #ff0000;
+    font-family: monospace;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Ефект друкарської машинки */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #ff0000;
+    white-space: nowrap;
+    animation:
+        typing 4s steps(40, end),
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff0000 }
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
